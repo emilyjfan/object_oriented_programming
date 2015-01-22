@@ -8,9 +8,6 @@ class Rover
 		@direction = direction
 	end 
 
-	def to_s
-		"(#{@x}, #{@y}, #{@direction})"
-	end
 
 	def read_instruction 
 		instruction = gets.chomp 
@@ -19,7 +16,7 @@ class Rover
 		else
 			turn(instruction) 
 		end
-		puts self 
+		puts "Your new position is #{self}." 
 	end
 
 
@@ -91,7 +88,8 @@ class Rover
 end
 
 rover = Rover.new(0, 0, "N")
-puts rover
+puts "Your starting position is #{rover}." 
+
 loop do 
 	puts "Enter 'M' to move forward; 'R' to turn right; and 'L' to turn left."
 	rover.read_instruction	
