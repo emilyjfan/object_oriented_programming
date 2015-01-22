@@ -36,3 +36,10 @@ student = Student.new
 student.name = "Christina"
 
 puts "Hello #{student.print_name}."
+
+puts student.learn
+puts instructor.teach 
+
+# puts student.teach
+# puts instructor.learn
+# The code above doesn't work because the teach method does not belong to the Student class, and the learn method does not belong to the Instructor class. 
