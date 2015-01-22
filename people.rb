@@ -27,7 +27,12 @@ class Instructor < Person
 	 end 
 end
 
-instructor = Person.new 
+instructor = Instructor.new 
 instructor.name = "Chris"
 
 puts "Hello #{instructor.print_name}."
+
+student = Student.new
+student.name = "Christina"
+
+puts "Hello #{student.print_name}."
