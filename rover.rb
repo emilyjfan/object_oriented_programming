@@ -8,7 +8,10 @@ class Rover
 		@direction = direction
 	end 
 
-
+	def to_s
+		"(#{@x}, #{@y}, #{@direction})"
+	end
+	
 	def read_instruction 
 		instruction = gets.chomp 
 		if instruction == "M" 
